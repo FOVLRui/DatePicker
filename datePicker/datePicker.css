@@ -1,0 +1,50 @@
+.date {
+  width: 240px;
+  user-select: none;
+}
+
+.date .head {
+  height: 30px;
+  font-size: 16px;
+  background: #ccc;
+}
+
+.date .head .lt {
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0 20px;
+  font: 16px/30px 'sim-sun';
+  display: inline-block;
+}
+
+.date .head .y-m {
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.date .head .gt {
+  cursor: pointer;
+  float: right;
+  vertical-align: middle;
+  padding: 0 20px;
+  font: 16px/30px 'sim-sun';
+}
+
+.date table {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.date table td {
+  border: 1px solid #ccc;
+}
+
+.date .active {
+  background: #92c1d6;
+}
+/*# sourceMappingURL=datePicker.css.map */

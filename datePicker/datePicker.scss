@@ -1,0 +1,42 @@
+.date {
+  width: 240px;
+  user-select: none;
+  .head {
+    height: 30px;
+    font-size: 16px;
+    background: #ccc;
+    .lt {
+      cursor: pointer;
+      vertical-align: middle;
+      padding: 0 20px;
+      font: 16px/30px 'sim-sun';
+      display: inline-block;
+    }
+    .y-m {
+      cursor: pointer;
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+    }
+    .gt {
+      cursor: pointer;
+      float: right;
+      vertical-align: middle;
+      padding: 0 20px;
+      font: 16px/30px 'sim-sun';
+    }
+  }
+  table {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    td {
+      border: 1px solid #ccc;
+    }
+  }
+  .active {
+    background: rgb(146, 193, 214);
+  }
+}

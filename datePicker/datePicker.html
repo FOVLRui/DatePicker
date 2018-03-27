@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DatePicker</title>
+  <link rel="stylesheet" href="./datePicker.css">
+</head>
+
+<body>
+  <div class="date">
+    <div class="head">
+      <span class="lt">&lt;</span>
+      <span class="y-m">2018-3</span>
+      <span class="gt">&gt;</span>
+    </div>
+    <table>
+      <thead>
+        <tr id="week">
+        </tr>
+      </thead>
+      <tbody id="day">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="./getDate.js"></script>
+  <script src="./render.js"></script>
+  <script>
+
+    getDate();
+
+
+
+    let picker = function () {
+      let oDate = document.querySelector('#day'),
+        hover = null,
+        tmp = '';
+      oDate.addEventListener('mousemove', e => {
+        if (hover) {
+          if (hover !== e.target) {
+            console.log(hover);
+
+            hover.className = hover.className.replace(' active', '');
+            hover = e.target;
+            hover.className += ' active';
+          }
+        } else {
+          hover = e.target;
+          hover.className += 'active';
+        }
+
+      });
+      oDate.addEventListener('mouseleave', e => {
+        hover.className = hover.className.replace(' active', '');
+        hover = null;
+      })
+
+      oDate.addEventListener('click', e => {
+
+      }
+      )
+    };
+    picker();
+  </script>
+</body>
+
+</html>
